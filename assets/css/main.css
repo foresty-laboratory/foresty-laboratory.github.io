@@ -6,24 +6,76 @@
 
 body {
   background-color: rgb(0, 0, 39);
+  background-image: url(../../assets/images/landing/bg-dark.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center 40%;
+  background-attachment: fixed;
   color: white;
 }
 
-.min-vh-70 {
-  min-height: 70vh;
+.min-vh-80 {
+  min-height: 80vh;
 }
 
 .home {
   min-height: 80vh;
-  background-image: url(../../assets/images/landing/bg-dark.png);
-  background-repeat: no-repeat;
-  background-size: 60%;
-  background-position: center;
   display: flex;
   align-items: center;
 }
 
+.about-img svg {
+  max-width: 120px;
+}
+
+.activity-img {
+  font-size: 120px;
+  color: rgb(0, 11, 109);
+}
+
+#activity .card {
+  min-height: 100%;
+}
+
+
+#achievement ul {
+  list-style-type: none;
+}
+
+#achievement ul li { 
+  padding: 24px 24px 6px;
+  cursor: pointer;
+}
+
+#achievement ul li:hover {
+  background-color: rgb(0, 17, 51, 0.3);
+}
+
+#footer ul {
+  list-style-type: none;
+  padding-left: 12px;
+}
+
+#footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#footer ul li a:hover {
+  border-bottom: 1px solid rgb(71, 71, 71);
+}
+
+#footer {
+  /* background-color: white; */
+  color: black;
+}
+
+
 @media screen and (max-width: 554px) {
+  body {
+    background-size: 90%;
+  }
+
   .about-img {
     margin-left: 24px;
   }
