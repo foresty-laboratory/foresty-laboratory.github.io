@@ -80,3 +80,8 @@ body {
     margin-left: 24px;
   }
 }
+
+.clickable {
+  text-decoration: none;
+  color: #000;
+}
